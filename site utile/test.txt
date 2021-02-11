@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" title="Nous contacter" content="contact" >
+    <title>Nous contacter</title>
+</head>
+<body>
+    <p>* C'est zone sont obligatoires</p>
+    <form action="http://bienvu.net/script.php" method="GET" id="formulaire_info">
+        <fieldset>
+            <legend>Vos coordonées</legend>
+            <label for="nom">Votre nom *: </label>
+            <input type="text" name="nom" id="nom" required>
+        <br>
+            <label for="prenom">Votre prénom *: </label>
+            <input type="text" name="prenom" id="prenom" required>
+        <br>
+            <label for="sexe">Sexe* :</label>
+            <input type="radio" name="feminin" value="feminin">Féminin 
+            <input type="radio" name="asculin" value="masculin">Masculin
+        <br>
+        <br>
+            <label for="date">Date de naissance* :</label>
+            <input type="date" name="ddn" id="date" required>
+        <br>
+            <label for="code_postal">Code postal * :</label>
+            <input type="text" name="code_postal" id="code_postal" required> 
+        <br>    
+            <label for="ville">Ville :</label>
+            <input type="text" name="ville" id="ville">
+        <br>
+            <label for="email">Email * :</label>
+            <input type="text" name="email" id="email" placeholder="dave.loper@afpa.fr">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Votre demande</legend>
+            <label for="sujet">Sujet* :</label>
+            <select name="sujet" id="sujet" required size="1">
+                <option value="selection" selected disabled>Veuillez séléctionner un sujet</option>
+                <option value="mes_commandes">Mes commandes</option>
+                <option value="question_produit">Question sur un produit</option>
+                <option value="reclamation">Réclamation</option>
+                <option value="autres">Autres</option>
+            </select>
+            <br>
+            <label for="question">Votre question * :</label>
+            <textarea name="question" id="question" cols="20" rows="2" required></textarea>
+            
+
+
+        </fieldset>
+
+
+
+
+
+
+    </form>
+</body>
+</html>
