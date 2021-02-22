@@ -1,0 +1,44 @@
+
+
+#lien {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+   
+}
+
+li {
+    display: inline;
+    
+}
+
+a:visited { 
+    color: red;
+}
+
+
+header p {
+    font-size: 1,2ex;
+    display: inline;
+    margin-left: 30%;
+    white-space: pre;
+}
+
+#contenu {
+    display: flex;
+    flex-flow: row;
+}
+#text {
+    width: 700px;
+}
+#colonne {
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 200px;
+    background-color:rgb(153, 153, 153);
+    
+}
+/* body {
+    margin: 10px 10px 10px 1000px;
+} */

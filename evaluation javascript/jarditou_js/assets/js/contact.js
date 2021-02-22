@@ -20,34 +20,29 @@ var adresseValid = /^[0-9]{1,3}(([,. ]?){1}[a-zA-Zàâäéèêëïîôöùûüç
 formValid.addEventListener('click', validationPrenom);
 
 // fonction qui vérifie le prénom
-function validationPrenom(event) {
+function validationPrenom() {
     //Si le champ est vide
     if (prenom.validity.valueMissing) {
-        event.preventDefault();
         missPrenom.textContent = 'Prénom manquant';
         missPrenom.style.color = 'red';
         return false;
         //Si le format de données est incorrect
     } else if (textValid.test(prenom.value) == false) {
-        event.preventDefault();
         missPrenom.textContent = 'Format incorrect';
         missPrenom.style.color = 'orange';
-    } else {(prenom.value) == Number("")
-    missPrenom.textContent = 'Pas de chiffre';
-    missPrenom.style.color = 'jaune';}
+    } else { 
+    }
 }
 
 formValid.addEventListener('click', validationNom);
 
 //fonction qui vérifie le nom
-function validationNom(event) {
+function validationNom() {
     if (nom.validity.valueMissing) {
-        event.preventDefault();
         missnom.textContent = 'nom manquant';
         missnom.style.color = 'red';
         return false;
     } else if (textValid.test(nom.value) == false) {
-        event.preventDefault();
         missnom.textContent = 'Format incorrect';
         missnom.style.color = 'orange';
     } else {
@@ -58,14 +53,12 @@ function validationNom(event) {
 formValid.addEventListener('click', validationCodepostal);
 
 //fonction qui vérifie le code postal
-function validationCodepostal(event) {
+function validationCodepostal() {
     if (codepostal.validity.valueMissing) {
-        event.preventDefault();
         misscodepostal.textContent = 'code postal manquant';
         misscodepostal.style.color = 'red';
         return false;
     } else if (codepostalValid.test(codepostal.value) == false) {
-        event.preventDefault();
         misscodepostal.textContent = 'Format incorrect';
         misscodepostal.style.color = 'orange';
     } else {
@@ -75,14 +68,12 @@ function validationCodepostal(event) {
 formValid.addEventListener('click', validationville);
 
 //fonction qui vérifie la ville
-function validationville(event) {
+function validationville() {
     if (ville.validity.valueMissing) {
-        event.preventDefault();
-        missville.textContent = 'ville manquant';
+        missville.textContent = 'ville manquante';
         missville.style.color = 'red';
         return false;
     } else if (textValid.test(ville.value) == false) {
-        event.preventDefault();
         missville.textContent = 'Format incorrect';
         missville.style.color = 'orange';
     } else {
@@ -91,17 +82,14 @@ function validationville(event) {
 
 formValid.addEventListener('click', validationadresse);
 // fonction qui vérifie l'adresse
-function validationadresse(event) {
+function validationadresse() {
     if (adresse.validity.valueMissing) {
-        event.preventDefault();
         missadresse.textContent = 'adresse manquante';
         missadresse.style.color = 'red';
         return false;
     } else if (adresseValid.test(adresse.value) == false) {
-        event.preventDefault();
         missadresse.textContent = 'Format incorrect';
         missadresse.style.color = 'orange';
     } else {
     }
 }
-

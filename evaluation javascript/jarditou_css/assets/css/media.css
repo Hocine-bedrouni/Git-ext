@@ -1,0 +1,114 @@
+@media screen and (max-width: 768px) 
+{
+    body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    img  {
+        max-width: 100%;
+        height: auto;
+    
+    }
+
+    #promo {
+       max-width: 100%;
+       height: auto;
+
+    }
+
+    li {
+        white-space: pre;
+
+    }
+
+    #contenu {
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+
+    #lien { 
+        max-width: 100%;
+        height: 100%;
+        float: none;
+        position: static;
+    }
+
+    #tableau {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    #colonne {
+        display: none; 
+    }    
+}        /* masque les éléments superflus */
+
+
+/* @media screen and (max-width: 576px) 
+{
+    body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    img  {
+        max-width: 100%;
+        width: auto;
+    /* ajuste l'image selon la taille de la fenetre */
+     /* }
+
+
+    #contenu {
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+
+    #lien { 
+        height: 100%;
+        float: none;
+        position: static;
+    }
+    } 
+
+    #colonne {
+        display: none;  */
+    /* }     */
+        /* masque les éléments superflus */
+    
+/* } */
+
+
+ /* @media screen and (min-width: 576px) 
+{
+    body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    img  {
+        max-width: 1,3em;
+        width: auto;
+    
+    }
+
+
+    #contenu {
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+
+    #lien { 
+        height: 100%;
+        float: none;
+        position: static;
+    }
+
+    #colonne {
+        display: none; 
+    }
+}   */
+
