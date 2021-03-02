@@ -1,0 +1,26 @@
+﻿CREATE DATABASE exo1;
+
+CREATE table client ( cli_num int PRIMARY KEY,
+                     cli_nom varchar(50),
+                     cli_adresse varchar(50),
+                     cli_tel varchar(50));
+
+CREATE INDEX cli_nom on client (cli_nom);
+
+CREATE table commande ( com_num int PRIMARY KEY,
+                     cli_num int,
+                     com_date datetime,
+                     com_obs varchar(50),
+		     FOREIGN KEY (cli_num) REFERENCES client(cli_num));
+
+CREATE table produit ( pro_num int PRIMARY KEY,
+                     pro_libelle varchar(50),
+                     pro_description varchar(50));
+		 
+
+CREATE table est_compose (com_num int, 
+                          pro_num int,
+                          est_qte int,
+                          PRIMARY key (com_num) REFERENCES commande (com_num),
+                          FOREIGN key (pro_num) REFERENCES produit (pro_num));
+
